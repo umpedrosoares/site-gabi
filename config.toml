@@ -20,11 +20,11 @@ url = '/recursos'
 
 [[params.socialLinks]]
 name = "YouTube"
-url = ""
+url = "https://www.youtube.com/@gabrielabevenuto/"
 
 [[params.socialLinks]]
 name = "Instagram"
-url = ""
+url = "https://www.instagram.com/gabriela.bevenuto/"
 
 [[params.socialLinks]]
 name = "E-mail"

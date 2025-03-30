@@ -5,7 +5,7 @@
             {{ $iconPath := printf "icons/%s.svg" .name }}
             {{ $icon := resources.Get $iconPath }}
             {{ if $icon }}
-                <a href="{{ .url }}" target="_blank"><img src="{{ $icon.RelPermalink }}" alt="{{ .name }}"></a>
+                <a href="{{ .url }}" target="_blank"><img src="{{ $icon.RelPermalink }}" alt="{{ .name }}" id="icon-{{.name}}"></a>
             {{ else }}
                 <!-- Handle missing icon -->
                 <a href="{{ .url }}" target="_blank">{{ .name }}</a>

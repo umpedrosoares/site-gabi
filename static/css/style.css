@@ -108,46 +108,6 @@ body {
 
 }
 
-#title-index {
-    position: relative;
-    display: inline-block;
-    padding: 0 5rem; /* Space for branches */
-    margin: 0 auto;
-    font-size: 2.5rem; /* Match your design */
-    line-height: 1;
-    z-index: 1; /* Ensures text stays above branches */
-  }
-  
-  
-  #title-index::before {
-    content: "";
-    position: absolute;
-    background-image: url('/images/ramo4.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 11rem; 
-    height: 11rem;
-    top: -6rem;
-    transform: translateY(-50%); 
-    z-index: -1; /* Places branches behind text */
-    left: -2rem; /* Adjust to nudge left branch outward */
-    rotate: 245deg;
-  }
-  
-  #title-index::after {
-    content: "";
-    position: absolute;
-    background-image: url('/images/ramo4.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 11rem; 
-    height: 11rem;
-    top: -2rem;
-    transform: translateY(-50%); 
-    z-index: -1; /* Places branches behind text */
-    right: -2rem; /* Adjust to nudge right branch outward */
-    rotate: 65deg;
-  }
 
 
 nav {
@@ -159,7 +119,7 @@ nav {
 }
 
 
-    nav a {
+nav a {
         font-size: 1.5rem;
         margin: 1.5rem; /* Reduced from 3rem */
         display: inline-block; /* Ensure links are properly displayed */
@@ -179,27 +139,38 @@ nav {
 #front-social .icons {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
+
 }
 
 #front-social img {
-
-    display: block;
     width: 2rem;
+    vertical-align: bottom;
     height: 2rem;
-    margin: 0.5rem;
+}
+
+#icon-E-mail {
+
+    margin-bottom: 0.4rem;
 }
 
 /* Partials */
 
 
-#blog-title {
+#blog-title{
 
     position: relative;
-    font-family: 'Charter', sans-serif;
-    font-style: italic;
-    font-size: 2rem;
-    margin-left: 9.9rem;
-    color: var(--green);
+    background-image: url('/images/ramo3.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    max-width: 6rem;
+    height: 6rem;
+    rotate: 45deg;
+    margin-left: 12rem;
+    margin-top: -1rem;
+    transform:scaleY(-1)
+
     
 }
 
@@ -212,8 +183,9 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin-top: 2rem;
-    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-left: 12rem;
+    margin-bottom: 7rem;
     justify-content: start;
     gap: 7rem;
     flex-wrap: wrap;
@@ -239,6 +211,7 @@ nav {
     font-family: 'Charter', sans-serif;
     font-style:italic;
     margin-top: -0.7rem; 
+    margin-bottom: 1.5rem;
 
 }
 
@@ -249,4 +222,83 @@ p {
     hyphens: auto;
     word-break: break-word;
     overflow-wrap: break-word;
+}
+
+#title-index {
+    position: relative;
+    display: inline-block;
+    padding: 0 5rem; /* Space for branches */
+    margin: 0 auto;
+    font-size: 2.5rem; /* Match your design */
+    line-height: 1;
+    z-index: 1; /* Ensures text stays above branches */
+}
+
+#title-index::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/ramo4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11rem; 
+    height: 11rem;
+    top: -6rem;
+    transform: translateY(-50%); 
+    z-index: -1; /* Places branches behind text */
+    left: -2rem; /* Adjust to nudge left branch outward */
+    rotate: 245deg;
+}
+
+#title-index::after {
+    content: "";
+    position: absolute;
+    background-image: url('/images/ramo4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11rem; 
+    height: 11rem;
+    top: -2rem;
+    transform: translateY(-50%); 
+    z-index: -1; /* Places branches behind text */
+    right: -2rem; /* Adjust to nudge right branch outward */
+    rotate: 65deg;
+}
+
+@media (max-width: 768px) {
+    #title-index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem; /* Reduced padding for mobile */
+    }
+    
+    #title-index::before {
+        position: static; /* Remove absolute positioning */
+        width: 10rem;
+        height: 10rem;
+        top: auto;
+        left: auto;
+        transform: scaleX(-1); /* Mirror the left branch */
+        rotate: 0deg;
+        margin-right: 0.5rem;
+    }
+    
+    #title-index::after {
+        position: static; /* Remove absolute positioning */
+        width: 10rem;
+        height: 10rem;
+        top: auto;
+        right: auto;
+        transform: none;
+        rotate: 0deg;
+        margin-left: 0.5rem;
+    }
+
+    #front-social {
+        position: inherit;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;        
+    }
 }
