@@ -1,7 +1,7 @@
 baseURL = 'https://gabrielabevenuto.com'
 languageCode = 'pt_BR'
 title = 'Gabriela Bevenuto'
-profileImage = "/images/profile.jpg"
+profileImage = "images/profile.jpg"
 email = "her.email@example.com"
 
 [[params.section]]

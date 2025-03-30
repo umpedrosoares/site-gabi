@@ -99,74 +99,65 @@ body {
     font-family: 'Charter', sans-serif;
     font-style:italic; 
     color: var(--green);
-    width: 100%;
-    text-align: center;
+    max-width: fit-content;
     margin-inline: auto;
     margin-top: 10rem;
+
+}
+
+h1 {
+    text-align: center;
     margin-bottom: 1rem;
-
-
+    
 }
 
 #title-index {
-    position: relative;
-    display: inline-block;
-    padding: 0 5rem; /* Space for branches */
-    margin: 0 auto;
-    font-size: 2.5rem; /* Match your design */
-    line-height: 1;
-    z-index: 1; /* Ensures text stays above branches */
+    position: relative; /* Important - missing from your current CSS */
+    /* display: inline-block; This helps with positioning the pseudo-elements */
   }
-  
-  
-  #title-index::before {
+
+
+#title-index::before {
     content: "";
     position: absolute;
     background-image: url('/images/ramo4.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 11rem; 
-    height: 11rem;
-    top: -6rem;
-    transform: translateY(-50%); 
-    z-index: -1; /* Places branches behind text */
-    left: -2rem; /* Adjust to nudge left branch outward */
+    width: 12rem;
+    height: 12rem;
+    left: -2rem;
+    top: -4rem;
     rotate: 245deg;
-  }
-  
-  #title-index::after {
+    /* right: -90px;
+    top: 50%; */
+    transform: scaleY(1);
+}
+#title-index::after {
     content: "";
     position: absolute;
     background-image: url('/images/ramo4.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 11rem; 
-    height: 11rem;
-    top: -2rem;
-    transform: translateY(-50%); 
-    z-index: -1; /* Places branches behind text */
-    right: -2rem; /* Adjust to nudge right branch outward */
+    width: 12rem;
+    height: 12rem;
+    right: -2rem;
+    top: -4.5rem;
     rotate: 65deg;
-  }
-
-
-nav {
-    max-width: 100%; /* Changed from fit-content */
-    margin: auto;
-    display: flex; /* Add this to properly layout the links */
-    justify-content: center; /* Center the links */
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    /* right: -90px;
+    top: 50%; */
+    /* transform: translateY(-0%); */
 }
 
 
-    nav a {
-        font-size: 1.5rem;
-        margin: 1.5rem; /* Reduced from 3rem */
-        display: inline-block; /* Ensure links are properly displayed */
-        position: relative; /* For any hover effects */
-        padding: 0.5rem 1rem; /* Add some padding for better click area */
-    }
+nav {
+    max-width: fit-content;
+    margin: auto;
+}
 
+nav a {
+    font-size: 1.5rem;
+    margin: 3rem;
+}
 
 #front-social {
     position: fixed;
