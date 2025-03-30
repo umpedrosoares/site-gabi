@@ -1,0 +1,238 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 16px;  /* Base font size for rem calculations */
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* End of Reset */
+
+/* Setting fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 1 999;
+}
+
+@font-face {
+    font-family: 'Garamontio';
+    src: url('fonts/garamontio_sans.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 1 999;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('fonts/Charter\ Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 1 999;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('fonts/Charter\ Italic.ttf') format('truetype');
+    font-style: italic;
+    font-display: swap;
+    font-weight: 1 999;
+}
+
+
+/* Colors */
+
+:root {
+
+    --yellow: #FFFCEE;
+    --green: #47624F;
+
+    
+}
+
+/* Layout */
+
+body {
+
+    background-color: var(--yellow);
+    
+
+}
+
+
+#front-header {
+    font-family: 'Charter', sans-serif;
+    font-style:italic; 
+    color: var(--green);
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-top: 10rem;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+#title-index {
+    position: relative; /* Important - missing from your current CSS */
+    display: inline-block; /* This helps with positioning the pseudo-elements */
+  }
+
+
+#title-index::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/ramo2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80rem;
+    height: 40px;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#title-index::after {
+    content: "";
+    position: absolute;
+    background-image: url('/images/ramo4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 40px;
+    right: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+nav {
+    max-width: fit-content;
+    margin: auto;
+}
+
+nav a {
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+#front-social {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: fit-content;
+}
+
+
+#front-social .icons {
+    display: flex;
+    align-items: center;
+}
+
+#front-social img {
+
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+/* Partials */
+
+
+#blog-title {
+
+    position: relative;
+    font-family: 'Charter', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    margin-left: 9.9rem;
+    color: var(--green);
+    
+}
+
+
+/* Gabriela Layout */
+
+
+#about {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    justify-content: start;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+#pic-gabi  {
+
+    max-width: 30rem;
+}
+
+#bio {
+
+    font-family: 'Charter', sans-serif;
+    color: var(--green);
+    max-width: 30rem;
+
+
+}
+
+#bio h1 {
+
+    text-align: start;
+    font-family: 'Charter', sans-serif;
+    font-style:italic;
+    margin-top: -0.7rem; 
+
+}
+
+
+p {
+    margin-bottom: 1rem; /* Adjust as needed */
+    line-height: 1.75; /* Adjust for readability */
+    hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}

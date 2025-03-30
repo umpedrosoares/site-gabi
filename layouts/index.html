@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div id="front-header">
+    <h1 id="title-index"> {{ .Site.Title }} </h1>   
+ <nav>
+        {{ range .Site.Params.section }}
+            <a href="{{.url}}">{{ .name}}</a>
+        {{end}}   
+    </nav>
+    
+</div> 
+
+{{partial "socials-footer.html" .}}
+
+
+{{ end }}

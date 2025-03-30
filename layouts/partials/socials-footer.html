@@ -1,0 +1,15 @@
+
+<div id="front-social">
+    <div class="icons">
+        {{ range .Site.Params.socialLinks }}
+            {{ $iconPath := printf "icons/%s.svg" .name }}
+            {{ $icon := resources.Get $iconPath }}
+            {{ if $icon }}
+                <a href="{{ .url }}" target="_blank"><img src="{{ $icon.RelPermalink }}" alt="{{ .name }}"></a>
+            {{ else }}
+                <!-- Handle missing icon -->
+                <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>

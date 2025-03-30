@@ -1,3 +1,36 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://gabrielabevenuto.com'
+languageCode = 'pt_BR'
+title = 'Gabriela Bevenuto'
+profileImage = "/images/profile.jpg"
+email = "her.email@example.com"
+
+[[params.section]]
+name = "Sobre mim"
+url = '/gabi'
+
+[[params.section]]
+name = 'Meu livro'
+url = '/livros'
+
+[[params.section]]
+name = 'Recursos'
+url = '/recursos'
+
+
+
+[[params.socialLinks]]
+name = "YouTube"
+url = ""
+
+[[params.socialLinks]]
+name = "Instagram"
+url = ""
+
+[[params.socialLinks]]
+name = "E-mail"
+url = ""
+
+[[params.membros]]
+name = "Apoia-se"
+url = ""
+
