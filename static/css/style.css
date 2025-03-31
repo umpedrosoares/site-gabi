@@ -318,6 +318,12 @@ p {
 
     }
 
+    nav a {
+
+       margin-top: 0rem;
+       margin-bottom: 0rem;
+    }
+
     #bio h1 {
 
         margin-top: -5rem;
