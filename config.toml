@@ -16,7 +16,13 @@ url = '/livros'
 name = 'Recursos'
 url = '/recursos'
 
+[[params.section]]
+name = 'Receitas'
+url = '/receitas'
 
+[[params.section]]
+name = 'Indicações de Livros'
+url = '/indicações'
 
 [[params.socialLinks]]
 name = "YouTube"

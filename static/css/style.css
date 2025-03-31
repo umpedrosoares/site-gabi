@@ -111,8 +111,9 @@ body {
 
 
 nav {
-    max-width: 100%; /* Changed from fit-content */
+    max-width: 40rem; /* Changed from fit-content */
     margin: auto;
+    margin-top: 1.5rem;
     display: flex; /* Add this to properly layout the links */
     justify-content: center; /* Center the links */
     flex-wrap: wrap; /* Allow wrapping if needed */
@@ -122,10 +123,34 @@ nav {
 nav a {
         font-size: 1.5rem;
         margin: 1.5rem; /* Reduced from 3rem */
+        margin-top: 1rem;
+        line-height: 0.5rem;
         display: inline-block; /* Ensure links are properly displayed */
         position: relative; /* For any hover effects */
         padding: 0.5rem 1rem; /* Add some padding for better click area */
+        transition: background 3s ease-in-out;
+        
     }
+
+
+    nav a::after {
+        content: "";
+        position: absolute;
+        
+        left: -4px;
+        right: -4px;
+        bottom: 0;
+        height: 40%;
+        background: #ffef5c;
+        opacity: 0.05;
+        transition: opacity 0.6s ease-out; /* Slower fade */
+      }
+
+      nav a:hover::after {
+        opacity: 0.5;
+        z-index: -1;
+      }
+
 
 
 #front-social {
