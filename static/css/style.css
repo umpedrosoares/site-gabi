@@ -122,8 +122,8 @@ nav {
 
 nav a {
         font-size: 1.5rem;
-        margin: 1.5rem; /* Reduced from 3rem */
-        margin-top: 1rem;
+        margin: 1.5rem; 
+        margin-top: 0.5rem;
         line-height: 0.5rem;
         display: inline-block; /* Ensure links are properly displayed */
         position: relative; /* For any hover effects */
@@ -136,7 +136,7 @@ nav a {
     nav a::after {
         content: "";
         position: absolute;
-        
+
         left: -4px;
         right: -4px;
         bottom: 0;
@@ -343,11 +343,8 @@ p {
 
     }
 
-    nav a {
 
-       margin-top: 0rem;
-       margin-bottom: 0rem;
-    }
+
 
     #bio h1 {
 
