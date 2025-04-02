@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <main>
+    <div id="rec-title-container">
+      <a id="back-branch-recursos" href="/"></a>
+      <span id="rec-title">{{ .Title }}</span>
+    </div>
+    <div class="recursos-grid">
+      {{ range $index, $element := .Pages }}
+        <div class="recurso-item {{ if not (modBool $index 2) }}reversed{{ end }}">
+          <a href="{{ .RelPermalink }}">
+            <img src="{{ .RelPermalink }}thumbnail.svg" alt="{{ .Title }}">
+          </a>
+          <a href="{{ .RelPermalink }}" class="recurso-title">{{ .Title }}</a>
+        </div>
+      {{ end }}
+    </div>
+  </main>
+{{ end }}
