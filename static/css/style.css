@@ -112,7 +112,7 @@ body {
 nav {
     max-width: 40rem; /* Changed from fit-content */
     margin: auto;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     display: flex; /* Add this to properly layout the links */
     justify-content: center; /* Center the links */
     flex-wrap: wrap; /* Allow wrapping if needed */
@@ -181,26 +181,28 @@ nav a {
 /* Partials */
 
 
-#blog-title{
+
+
+
+/* Gabriela Layout */
+
+#back-branch-gabi{
 
     position: absolute;
-    background-image: url('/images/ramo3.svg');
+    background-image: url('/images/ramo2.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     width: 8rem;
     height: 8rem;
-    rotate: 120deg;
-    left: 0;
-    top: -1rem;
+    rotate: 90deg;
+    transform: scaleX(-1);
+    left: -0.25rem;
+    top: 0rem;
 
 
     
 }
-
-
-/* Gabriela Layout */
-
 
 #about {
 
@@ -307,16 +309,42 @@ p {
     left: 0; /* Position the branch on the left */
   }
   
-  #rec-title {
+  #back-branch-receitas {
+    background-image: url('/images/ramo4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    rotate: 70deg;
+    position: absolute;
+    left: 0; /* Position the branch on the left */
+  }
+
+  #back-branch-indica {
+    background-image: url('/images/ramo5.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    rotate: 70deg;
+    position: absolute;
+    transform: scaleX(-1);
+    left: -1rem; /* Position the branch on the left */
+  }
+
+  #recursos-title {
     display: inline-block;
     position: relative;
     font-style: italic;
     font-size: 2.5rem;
     padding: 0.5rem 1rem;
     z-index: 1;
+    margin-bottom: 1rem;
   }
 
-  #rec-title::after {
+  #recursos-title::after {
     content: "";
     position: absolute;
     left: 1rem;
@@ -365,6 +393,70 @@ p {
     width: 22rem; /* Ensures centering works correctly */
   }
   
+  h2 {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 2rem 0 2rem;
+    text-align: center;
+  }
+
+
+  #book-recs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    margin: 0 auto 5rem;
+  }
+
+
+  .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .each-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14rem; /* Fixed width for consistency */
+  }
+
+  .each-book img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .each-book img:hover {
+    transform: scale(1.05);
+  }
+
+  .each-book a:last-of-type {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #book-recs img {
+
+    max-width: 15rem;
+  }
+
+  #associado {
+    font-size: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    text-wrap: balance;
+  }
+
 @media (max-width: 768px) {
     #title-index {
         display: flex;
@@ -403,7 +495,7 @@ p {
         margin-right: auto;        
     }
 
-    #blog-title {
+    #back-branch-gabi, #back-branch-recursos, #back-branch-indica, #back-branch-receitas {
         display: none;
     }
 
@@ -434,6 +526,34 @@ p {
         max-width: 20rem;
     }
 
-    
+    .recursos-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .recurso-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .recurso-item.reversed {
+        flex-direction: column;
+      }
+
+    .recurso-item img {
+
+        max-width: 20rem;
+    }
+
+    nav {
+
+      margin-top: 2rem;
+    }
 
 }

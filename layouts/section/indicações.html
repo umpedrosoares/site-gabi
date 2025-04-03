@@ -1,0 +1,28 @@
+{{define "main"}}
+
+<div id="rec-title-container">
+  <a id="back-branch-indica" href="/"></a>
+  <span id="recursos-title">{{ .Title }}</span>
+</div>
+
+<div id="book-recs">
+{{ range site.Data.livros.categorias }}
+  <h2>{{ .name }}</h2>
+  <div class="book-grid">
+    {{ range .livros }}
+    <div class="each-book">
+      <a href="{{ .link }}" target="_blank" >
+        <img src="/images/livros/{{ .cover }}" alt="{{ .title }}">
+      </a>
+      <a href="{{.link}}" target="_blank">"{{.title}}"</a>
+    </div>
+    {{ end }}
+  </div>
+
+{{ end }}
+</div>
+
+<span id="associado">{{.Content}}</span>
+
+
+{{end}}

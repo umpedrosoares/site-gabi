@@ -8,9 +8,9 @@ email = "her.email@example.com"
 name = "Sobre mim"
 url = '/gabi'
 
-[[params.section]]
-name = 'Meu livro'
-url = '/livros'
+# [[params.section]]
+# name = 'Meu livro'
+# url = '/livros'
 
 [[params.section]]
 name = 'Recursos'
