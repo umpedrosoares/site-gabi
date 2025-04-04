@@ -1,53 +1,65 @@
 categorias:
   - name: "Teologia"
     livros:
-      - title: "Cristianismo puro e simples"
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
+        author: C. S. Lewis
   - name: "Ficção"
     livros:
-      - title: "Cristianismo puro e simples"
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
+        author: C. S. Lewis
   - name: "Hábitos"
     livros:
-      - title: "Cristianismo puro e simples"
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
-        cover: "cristianismo.svg"
-        link:
+        author: C. S. Lewis
   - name: "Maternidade"
     livros:
-      - title: "Cristianismo puro e simples"
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-      - title: "Cristianismo puro e simples"
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
         cover: "cristianismo.svg"
         link:
-
-
+        author: C. S. Lewis
+      - title: Cristianismo Puro e Simples
+        cover: "cristianismo.svg"
+        link:
+        author: C. S. Lewis
